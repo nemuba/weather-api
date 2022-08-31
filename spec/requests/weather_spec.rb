@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
-RSpec.describe "Weathers", type: :request do
-  describe "POST /weather/current", vcr: { cassette_name: 'weather/current', record: :new_episodes } do
+RSpec.describe 'Weathers', type: :request do
+  describe 'POST /weather/current', vcr: { cassette_name: 'weather/current', record: :new_episodes } do
     it 'POST Weather/current with status 200' do
       post '/weather/current', params: { location: 'Sao Paulo' }
       expect(response).to have_http_status(200)

@@ -1,10 +1,13 @@
-class WeatherService
-  ROOT_PATH='http://api.weatherstack.com'.freeze
-  ACCESS_TOKEN='e294cc831cde0fe6c95bfbade7ac980c'.freeze
-  CURRENT_PATH="#{ROOT_PATH}/current?access_key=#{ACCESS_TOKEN}".freeze
+# frozen_string_literal: true
 
-  def self.current(query=nil)
-    return code(601) unless query.present?
+# WeatherService
+class WeatherService
+  ROOT_PATH = 'http://api.weatherstack.com'
+  ACCESS_TOKEN = 'e294cc831cde0fe6c95bfbade7ac980c'
+  CURRENT_PATH = "#{ROOT_PATH}/current?access_key=#{ACCESS_TOKEN}".freeze
+
+  def self.current(query = nil)
+    return code(601) if query.blank?
 
     request = HTTParty.get("#{CURRENT_PATH}&query=#{query}").parsed_response
 
@@ -14,14 +17,13 @@ class WeatherService
   end
 
   class << self
-
     def error?(request)
       statuses = status_code.map { |sc| sc[:code] }
       request['success'] == false && request['error'].present? && statuses.include?(request['error']['code'])
     end
 
     def code(number)
-      status_code.find {|status| status[:code] == number }
+      status_code.find { |status| status[:code] == number }
     end
 
     def status_code
@@ -47,7 +49,7 @@ class WeatherService
         { code: 612, message:	'invalid_historical_time_frame' },
         { code: 613, message:	'historical_time_frame_too_long' },
         { code: 614, message:	'missing_historical_date' },
-        { code: 615, message:	'request_failed' },
+        { code: 615, message:	'request_failed' }
       ]
     end
   end
