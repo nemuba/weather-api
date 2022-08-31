@@ -1,0 +1,110 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.weatherstack.com/current?access_key=e294cc831cde0fe6c95bfbade7ac980c&query=Sao%20Paulo
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 31 Aug 2022 01:19:00 GMT
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Apilayer-Transaction-Id:
+      - dbedd961-556f-4cbd-b564-6f3044dbf1ce
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Time:
+      - '0.166'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=p%2BV%2B%2FuX4YnlfF8zrDAE67J6VXeVmREgfZc74BGpU2stXyB%2FQ%2F6UNROw7rAXxt5GkvsuFNGSqjCQZkHiUmI5qxVRjRO0Ld94ab5z%2BnjfZNhojh2LdnjlfecuUZsYfZDPh%2BgTuCg9e5w%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 7431ef7a6c25a5e9-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"request":{"type":"City","query":"Sao Paulo, Brazil","language":"en","unit":"m"},"location":{"name":"Sao
+        Paulo","country":"Brazil","region":"Sao Paulo","lat":"-23.533","lon":"-46.617","timezone_id":"America\/Sao_Paulo","localtime":"2022-08-30
+        22:19","localtime_epoch":1661897940,"utc_offset":"-3.0"},"current":{"observation_time":"01:19
+        AM","temperature":12,"weather_code":116,"weather_icons":["https:\/\/assets.weatherstack.com\/images\/wsymbols01_png_64\/wsymbol_0004_black_low_cloud.png"],"weather_descriptions":["Partly
+        cloudy"],"wind_speed":24,"wind_degree":110,"wind_dir":"ESE","pressure":1027,"precip":0,"humidity":82,"cloudcover":75,"feelslike":10,"uv_index":1,"visibility":10,"is_day":"no"}}'
+  recorded_at: Wed, 31 Aug 2022 01:19:00 GMT
+- request:
+    method: get
+    uri: http://api.weatherstack.com/current?access_key=e294cc831cde0fe6c95bfbade7ac980c&query=Bahia
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 31 Aug 2022 01:22:10 GMT
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Apilayer-Transaction-Id:
+      - 66ce8b0c-8641-423f-aa8c-784604f6c6f4
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Time:
+      - '0.217'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2Fh2PxKcy5LJKtkA%2BJvmxmkLezzuADCPOQIMUpnYeT86nc0dx0yyEggHtixPTKGubOEhE3o1Kiotfu9pbmRfuMGVXcDPIgQXFTCHJLji2mTThAXzKI%2FE4NvB4nnDlR4IoRDk%2BAH%2BxpQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 7431f41c7ee251f3-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"request":{"type":"City","query":"Bahia Blanca, Argentina","language":"en","unit":"m"},"location":{"name":"Bahia
+        Blanca","country":"Argentina","region":"Buenos Aires","lat":"-38.717","lon":"-62.283","timezone_id":"America\/Argentina\/Buenos_Aires","localtime":"2022-08-30
+        22:22","localtime_epoch":1661898120,"utc_offset":"-3.0"},"current":{"observation_time":"01:22
+        AM","temperature":14,"weather_code":113,"weather_icons":["https:\/\/assets.weatherstack.com\/images\/wsymbols01_png_64\/wsymbol_0008_clear_sky_night.png"],"weather_descriptions":["Clear"],"wind_speed":18,"wind_degree":11,"wind_dir":"N","pressure":1017,"precip":0,"humidity":41,"cloudcover":0,"feelslike":12,"uv_index":1,"visibility":10,"is_day":"no"}}'
+  recorded_at: Wed, 31 Aug 2022 01:22:10 GMT
+recorded_with: VCR 6.1.0
