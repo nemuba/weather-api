@@ -1,6 +1,6 @@
 class WeatherController < ApplicationController
   def create
-    weather = WeatherApi.current(params[:location])
+    weather = WeatherService.current(params[:location])
 
     if weather.has_key?(:code)
       render json: weather, status: 422
