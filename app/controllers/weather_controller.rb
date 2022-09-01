@@ -3,12 +3,28 @@
 # WeatherController
 class WeatherController < ApplicationController
   def create
-    weather = WeatherService.current(params[:location])
-
-    if weather.key?(:code)
-      render json: weather, status: :unprocessable_entity
+    data = Creator.call(weather_params.to_unsafe_h)
+    
+    if data.present? && data.is_a?(Hash) && data.key?(:error)
+      render_json(data, status: :accepted)
     else
-      render json: weather, status: :ok
+      render_json({}, status: :created)
     end
+  end
+
+  def show
+    data = Creator.show(params[:token])
+
+    if data.is_a?(Hash) && data.key?(:error)
+      render_json(data, status: :accepted)
+    else
+      render_json(data, status: :ok)
+    end
+  end
+
+  private
+
+  def weather_params
+    params.require(:weather).permit(:token, :location)
   end
 end

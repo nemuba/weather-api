@@ -1,0 +1,7 @@
+:concurrency: <%= ENV['SIDEKIQ_CONCURRENCY_NUMBER'] || 5 %>
+production:
+  :concurrency: <%= ENV['SIDEKIQ_CONCURRENCY_NUMBER'] || 8 %>
+:queues:
+  - [default, 1]
+  - [weather_request, 1]
+
