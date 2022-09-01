@@ -107,4 +107,1119 @@ http_interactions:
         22:22","localtime_epoch":1661898120,"utc_offset":"-3.0"},"current":{"observation_time":"01:22
         AM","temperature":14,"weather_code":113,"weather_icons":["https:\/\/assets.weatherstack.com\/images\/wsymbols01_png_64\/wsymbol_0008_clear_sky_night.png"],"weather_descriptions":["Clear"],"wind_speed":18,"wind_degree":11,"wind_dir":"N","pressure":1017,"precip":0,"humidity":41,"cloudcover":0,"feelslike":12,"uv_index":1,"visibility":10,"is_day":"no"}}'
   recorded_at: Wed, 31 Aug 2022 01:22:10 GMT
+- request:
+    method: get
+    uri: http://api.weatherstack.com/current?access_key=e294cc831cde0fe6c95bfbade7ac980c&query=Maine
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 01 Sep 2022 11:44:04 GMT
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Apilayer-Transaction-Id:
+      - 2bcd8f52-e878-4d6c-a9b0-5b620567e1d0
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Time:
+      - '0.188'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=L4Z8U2usDMo7VMBuKs9Gc%2FJpYlQ81vmxJZgDHXLYSkpXYhpsWAvv3vABRSetMosz13XcxyTCJYlJt%2FKI3Ee8BH06LIE1nWfjI8qosEH4oVPdTqpA0rCxg0BJ2LmWOMU3IZ3qHA47pQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 743dc0792a91a4c9-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"request":{"type":"City","query":"Maine-Soroa, Niger","language":"en","unit":"m"},"location":{"name":"Maine-Soroa","country":"Niger","region":"Diffa","lat":"13.218","lon":"12.027","timezone_id":"Africa\/Niamey","localtime":"2022-09-01
+        12:44","localtime_epoch":1662036240,"utc_offset":"1.0"},"current":{"observation_time":"11:44
+        AM","temperature":25,"weather_code":353,"weather_icons":["https:\/\/assets.weatherstack.com\/images\/wsymbols01_png_64\/wsymbol_0009_light_rain_showers.png"],"weather_descriptions":["Light
+        rain shower"],"wind_speed":10,"wind_degree":169,"wind_dir":"SSE","pressure":1013,"precip":2,"humidity":81,"cloudcover":100,"feelslike":28,"uv_index":6,"visibility":10,"is_day":"yes"}}'
+  recorded_at: Thu, 01 Sep 2022 11:44:04 GMT
+- request:
+    method: get
+    uri: http://api.weatherstack.com/current?access_key=e294cc831cde0fe6c95bfbade7ac980c&query=Oregon
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 01 Sep 2022 11:44:39 GMT
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Apilayer-Transaction-Id:
+      - 54d19e54-0b12-4182-b26a-6b15480deccd
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Time:
+      - '0.183'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=FSAI92FHep9BPEDbqrV3bUmk1QdGKrZC1WbcLeoL6kNTUPTtDWSfVYC5qPiWVDKTrbGDoiwX2%2B3fvLH3n5WM%2BregODpQpT5H6iBfPU4yQZSsC1PR6owLc0YxfM%2FOusWLyarrUq2vMA%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 743dc1547a9f6024-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"request":{"type":"City","query":"Oregon City, United States of America","language":"en","unit":"m"},"location":{"name":"Oregon
+        City","country":"United States of America","region":"Oregon","lat":"45.358","lon":"-122.606","timezone_id":"America\/Los_Angeles","localtime":"2022-09-01
+        04:44","localtime_epoch":1662007440,"utc_offset":"-7.0"},"current":{"observation_time":"11:44
+        AM","temperature":13,"weather_code":113,"weather_icons":["https:\/\/assets.weatherstack.com\/images\/wsymbols01_png_64\/wsymbol_0008_clear_sky_night.png"],"weather_descriptions":["Clear"],"wind_speed":4,"wind_degree":10,"wind_dir":"N","pressure":1017,"precip":0,"humidity":93,"cloudcover":0,"feelslike":14,"uv_index":1,"visibility":16,"is_day":"no"}}'
+  recorded_at: Thu, 01 Sep 2022 11:44:39 GMT
+- request:
+    method: get
+    uri: http://api.weatherstack.com/current?access_key=e294cc831cde0fe6c95bfbade7ac980c&query=Florida
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 01 Sep 2022 11:44:40 GMT
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Apilayer-Transaction-Id:
+      - b16d2c6b-7112-4c0a-9981-10bd58b1699e
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Time:
+      - '0.200'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=0Hz09one4PqyawQ%2F4KYVu%2FDwp3dkZEo4TF8WTlkw6sV7bzt9sySSBd%2BTx4Da6%2F89%2Bu7ticHvcBxUXXKLSDmoWhybU7riVuMwe7MCW8dQ8n9kNqZdLsoWWRL%2B%2FSlFr49mrvm%2BE6f6qQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 743dc1579ce051b3-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"request":{"type":"City","query":"Floridablanca, Colombia","language":"en","unit":"m"},"location":{"name":"Floridablanca","country":"Colombia","region":"Santander","lat":"7.065","lon":"-73.090","timezone_id":"America\/Bogota","localtime":"2022-09-01
+        06:44","localtime_epoch":1662014640,"utc_offset":"-5.0"},"current":{"observation_time":"11:44
+        AM","temperature":18,"weather_code":248,"weather_icons":["https:\/\/assets.weatherstack.com\/images\/wsymbols01_png_64\/wsymbol_0007_fog.png"],"weather_descriptions":["Shallow
+        Fog"],"wind_speed":7,"wind_degree":190,"wind_dir":"S","pressure":1016,"precip":0.4,"humidity":100,"cloudcover":50,"feelslike":18,"uv_index":1,"visibility":10,"is_day":"yes"}}'
+  recorded_at: Thu, 01 Sep 2022 11:44:40 GMT
+- request:
+    method: get
+    uri: http://api.weatherstack.com/current?access_key=e294cc831cde0fe6c95bfbade7ac980c&query=New%20York
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 01 Sep 2022 11:45:07 GMT
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Apilayer-Transaction-Id:
+      - 68a88ff2-071a-4413-a1f8-1a0a0faf0017
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Time:
+      - '0.012'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=lSV4iQqA6DwcEV03FhOSLkNDwWfY81Dy0YORo9gJgEe5HVB3dhYepn0WV9RJLLFLnqsCx9HbBai33%2Bdy3U%2Bx%2BB075MLWHy7jnDCnHSHZPrmfaPYPuMydadbwTvoaKcmOePryZKyW8A%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 743dc20659d7a6be-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"request":{"type":"City","query":"New York, United States of America","language":"en","unit":"m"},"location":{"name":"New
+        York","country":"United States of America","region":"New York","lat":"40.714","lon":"-74.006","timezone_id":"America\/New_York","localtime":"2022-09-01
+        07:42","localtime_epoch":1662018120,"utc_offset":"-4.0"},"current":{"observation_time":"11:42
+        AM","temperature":22,"weather_code":113,"weather_icons":["https:\/\/assets.weatherstack.com\/images\/wsymbols01_png_64\/wsymbol_0001_sunny.png"],"weather_descriptions":["Sunny"],"wind_speed":24,"wind_degree":290,"wind_dir":"WNW","pressure":1013,"precip":0,"humidity":51,"cloudcover":0,"feelslike":25,"uv_index":1,"visibility":16,"is_day":"yes"}}'
+  recorded_at: Thu, 01 Sep 2022 11:45:07 GMT
+- request:
+    method: get
+    uri: http://api.weatherstack.com/current?access_key=e294cc831cde0fe6c95bfbade7ac980c&query=Nevada
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 01 Sep 2022 11:45:08 GMT
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Apilayer-Transaction-Id:
+      - 459f1cad-063a-4d4e-89f3-612a3e35d873
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Time:
+      - '0.194'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=7PgmpmOVWytbKsRB7ljj5scJ6FaGKJEcqOLAHPe43%2BVgG3zeK6hl0z%2Bys3l9lDJ4Q3Gve%2FDJ4eAQnYPJIpxMebWDke1nbyulgzJcx%2BxxcjsW0wpmqvnpm57N3XdktOZYXUtMVQRWKw%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 743dc208ba8f4cf7-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"request":{"type":"City","query":"Nevada, USA United States of America","language":"en","unit":"m"},"location":{"name":"Nevada","country":"USA
+        United States of America","region":"Texas","lat":"33.057","lon":"-96.379","timezone_id":"America\/Chicago","localtime":"2022-09-01
+        06:45","localtime_epoch":1662014700,"utc_offset":"-5.0"},"current":{"observation_time":"11:45
+        AM","temperature":23,"weather_code":113,"weather_icons":["https:\/\/assets.weatherstack.com\/images\/wsymbols01_png_64\/wsymbol_0008_clear_sky_night.png"],"weather_descriptions":["Clear"],"wind_speed":4,"wind_degree":10,"wind_dir":"N","pressure":1017,"precip":0,"humidity":91,"cloudcover":0,"feelslike":25,"uv_index":1,"visibility":16,"is_day":"no"}}'
+  recorded_at: Thu, 01 Sep 2022 11:45:08 GMT
+- request:
+    method: get
+    uri: http://api.weatherstack.com/current?access_key=e294cc831cde0fe6c95bfbade7ac980c&query=Arizona
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 01 Sep 2022 11:45:08 GMT
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Apilayer-Transaction-Id:
+      - 960293a3-d610-4fcc-9380-0693ad1463e6
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Time:
+      - '0.186'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=GMGtCojwaAQmrPx4HJZYj%2BYllJGTEoWmflIG9kxWhPaNRHKL9SNnZpLmNaQ2kufaEucoflga0Hkstzfe8QDD%2FJChvtuJoxQNIU3bdJjhrq3dIJ6Xdl3SZFwMbhh63BOxDw0ncxWSdg%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 743dc20c0e80a57d-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"request":{"type":"City","query":"Arizona, Honduras","language":"en","unit":"m"},"location":{"name":"Arizona","country":"Honduras","region":"Atlantida","lat":"15.633","lon":"-87.317","timezone_id":"America\/Tegucigalpa","localtime":"2022-09-01
+        05:45","localtime_epoch":1662011100,"utc_offset":"-6.0"},"current":{"observation_time":"11:45
+        AM","temperature":23,"weather_code":116,"weather_icons":["https:\/\/assets.weatherstack.com\/images\/wsymbols01_png_64\/wsymbol_0004_black_low_cloud.png"],"weather_descriptions":["Partly
+        cloudy"],"wind_speed":7,"wind_degree":210,"wind_dir":"SSW","pressure":1009,"precip":0,"humidity":93,"cloudcover":34,"feelslike":25,"uv_index":1,"visibility":10,"is_day":"yes"}}'
+  recorded_at: Thu, 01 Sep 2022 11:45:08 GMT
+- request:
+    method: get
+    uri: http://api.weatherstack.com/current?access_key=e294cc831cde0fe6c95bfbade7ac980c&query=Delaware
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 01 Sep 2022 11:45:37 GMT
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Apilayer-Transaction-Id:
+      - 8eed75a7-35d9-4bd0-8071-0e9b42941867
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Time:
+      - '0.187'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=sKgZJyL%2F0zOsCM14%2BdlIQscGNxhzsq4bGb3Ezr9c01MXR7AMHWtTMqjfN9pOdf%2FUHjNsJQO7slEG7LvRHhd5YPuv36JlkBksVHKH%2Fkm9T9NUa2Ed0jGnCg9Lyr4%2BrHZVQvNjl32L4g%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 743dc2c12fbb6b02-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"request":{"type":"City","query":"Delaware, United States of America","language":"en","unit":"m"},"location":{"name":"Delaware","country":"United
+        States of America","region":"Ohio","lat":"40.299","lon":"-83.068","timezone_id":"America\/New_York","localtime":"2022-09-01
+        07:45","localtime_epoch":1662018300,"utc_offset":"-4.0"},"current":{"observation_time":"11:45
+        AM","temperature":17,"weather_code":113,"weather_icons":["https:\/\/assets.weatherstack.com\/images\/wsymbols01_png_64\/wsymbol_0001_sunny.png"],"weather_descriptions":["Sunny"],"wind_speed":4,"wind_degree":10,"wind_dir":"N","pressure":1018,"precip":0,"humidity":84,"cloudcover":0,"feelslike":17,"uv_index":1,"visibility":16,"is_day":"yes"}}'
+  recorded_at: Thu, 01 Sep 2022 11:45:37 GMT
+- request:
+    method: get
+    uri: http://api.weatherstack.com/current?access_key=e294cc831cde0fe6c95bfbade7ac980c&query=Iowa
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 01 Sep 2022 11:45:38 GMT
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Apilayer-Transaction-Id:
+      - e029b899-33ee-4219-bc95-b5a96fa545b2
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Time:
+      - '0.180'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=nCOdBDIt4oOkzcClcH2KNjBmt8xBiZ1CntJ0VCec9bXE%2BN7c6Vbb7dvul%2BUrC4RF8UhQsjCCl7lBJDJz8GPr4J7ItJVb1EeMUQwBLroPYRMM6daw7BRXE0Gcrwnu5QYOTDTfVVSwfw%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 743dc2c45ba0a493-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"request":{"type":"City","query":"Iowa City, United States of America","language":"en","unit":"m"},"location":{"name":"Iowa
+        City","country":"United States of America","region":"Iowa","lat":"41.661","lon":"-91.530","timezone_id":"America\/Chicago","localtime":"2022-09-01
+        06:45","localtime_epoch":1662014700,"utc_offset":"-5.0"},"current":{"observation_time":"11:45
+        AM","temperature":17,"weather_code":116,"weather_icons":["https:\/\/assets.weatherstack.com\/images\/wsymbols01_png_64\/wsymbol_0002_sunny_intervals.png"],"weather_descriptions":["Partly
+        cloudy"],"wind_speed":6,"wind_degree":160,"wind_dir":"SSE","pressure":1017,"precip":0,"humidity":84,"cloudcover":75,"feelslike":17,"uv_index":1,"visibility":16,"is_day":"yes"}}'
+  recorded_at: Thu, 01 Sep 2022 11:45:38 GMT
+- request:
+    method: get
+    uri: http://api.weatherstack.com/current?access_key=e294cc831cde0fe6c95bfbade7ac980c&query=Mississippi
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 01 Sep 2022 11:45:38 GMT
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Apilayer-Transaction-Id:
+      - 1d42580f-4619-43d9-8804-c7722ac11875
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Time:
+      - '0.189'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=2QUrYJFRQA69fAp%2Fb5T7uC1gXMfFj0SyubJKo1P6ZjY8L%2B9TJbOINSkI5doRdvBHwRpTEJVULeK5cblDUolycmFYrQOeu5E1wTD%2F7ZVsmr3FWx3UyEi2NrYoDQ0JJ%2BSdJjo%2Ft619PA%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 743dc2c76d37a620-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"request":{"type":"City","query":"Mississippi State, USA United States
+        of America","language":"en","unit":"m"},"location":{"name":"Mississippi State","country":"USA
+        United States of America","region":"Mississippi","lat":"33.458","lon":"-88.786","timezone_id":"America\/Chicago","localtime":"2022-09-01
+        06:45","localtime_epoch":1662014700,"utc_offset":"-5.0"},"current":{"observation_time":"11:45
+        AM","temperature":18,"weather_code":113,"weather_icons":["https:\/\/assets.weatherstack.com\/images\/wsymbols01_png_64\/wsymbol_0001_sunny.png"],"weather_descriptions":["Sunny"],"wind_speed":4,"wind_degree":10,"wind_dir":"N","pressure":1017,"precip":0,"humidity":93,"cloudcover":0,"feelslike":18,"uv_index":1,"visibility":16,"is_day":"yes"}}'
+  recorded_at: Thu, 01 Sep 2022 11:45:38 GMT
+- request:
+    method: get
+    uri: http://api.weatherstack.com/current?access_key=e294cc831cde0fe6c95bfbade7ac980c&query=Bahia,%20Brasil
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 01 Sep 2022 11:49:15 GMT
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Apilayer-Transaction-Id:
+      - 3a0a30c2-3fa9-4df8-8f2f-71da482618ab
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Time:
+      - '0.197'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=yTlQ2jH87H1nxdBP68BDh0TMwPu52BFQDPZtVXZw9dSmqeKKcDzFVQvBRuc%2FnvcDj5E8MwEfMhIltxTkhOkLsyFdvhIhpzu43YKm1ahBEZDeUsdpMfXYFIXl6vZy0uYupdS%2Fbmgjgg%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 743dc811db224d42-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"request":{"type":"City","query":"Pau Brasil, Brazil","language":"en","unit":"m"},"location":{"name":"Pau
+        Brasil","country":"Brazil","region":"Bahia","lat":"-15.450","lon":"-39.650","timezone_id":"America\/Bahia","localtime":"2022-09-01
+        08:49","localtime_epoch":1662022140,"utc_offset":"-3.0"},"current":{"observation_time":"11:49
+        AM","temperature":16,"weather_code":143,"weather_icons":["https:\/\/assets.weatherstack.com\/images\/wsymbols01_png_64\/wsymbol_0006_mist.png"],"weather_descriptions":["Mist"],"wind_speed":4,"wind_degree":235,"wind_dir":"SW","pressure":1022,"precip":0,"humidity":94,"cloudcover":41,"feelslike":16,"uv_index":4,"visibility":2,"is_day":"yes"}}'
+  recorded_at: Thu, 01 Sep 2022 11:49:15 GMT
+- request:
+    method: get
+    uri: http://api.weatherstack.com/current?access_key=e294cc831cde0fe6c95bfbade7ac980c&query=Bahia,%20Brasil
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 01 Sep 2022 11:49:15 GMT
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Apilayer-Transaction-Id:
+      - 6e0c6b85-c66d-4da7-83b8-5c588619ba08
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Time:
+      - '0.013'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=0d0zppuBnz9wFGjVz2HMvhGlGZaUW%2BJMBl7vUavBoFX6CqkW7viheQUjplwDDZASqtADtP9hADoMWNTlqTEwHDA1BE7anPAs2JxkK9ucyo8oIpls%2BnpskEH9PdG%2Bzc0Qwt11W9tDHQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 743dc8152fcda49c-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"request":{"type":"City","query":"Pau Brasil, Brazil","language":"en","unit":"m"},"location":{"name":"Pau
+        Brasil","country":"Brazil","region":"Bahia","lat":"-15.450","lon":"-39.650","timezone_id":"America\/Bahia","localtime":"2022-09-01
+        08:49","localtime_epoch":1662022140,"utc_offset":"-3.0"},"current":{"observation_time":"11:49
+        AM","temperature":16,"weather_code":143,"weather_icons":["https:\/\/assets.weatherstack.com\/images\/wsymbols01_png_64\/wsymbol_0006_mist.png"],"weather_descriptions":["Mist"],"wind_speed":4,"wind_degree":235,"wind_dir":"SW","pressure":1022,"precip":0,"humidity":94,"cloudcover":41,"feelslike":16,"uv_index":4,"visibility":2,"is_day":"yes"}}'
+  recorded_at: Thu, 01 Sep 2022 11:49:15 GMT
+- request:
+    method: get
+    uri: http://api.weatherstack.com/current?access_key=e294cc831cde0fe6c95bfbade7ac980c&query=Bahia,%20Brasil
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 01 Sep 2022 11:49:16 GMT
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Apilayer-Transaction-Id:
+      - 9f60df19-e256-457c-b627-86086eaebbe0
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Time:
+      - '0.012'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=kz0XemDvfiUbSirlj2CgRtePYPDhwqgPASjhgbUBdmt9%2BO8pVOm58MDk54YEykXAHy8qcor1Kz8HIOn6ZHpTyKdRbrbCbWRT8l5TdVIrAP3g%2BslEXu7kvtzayMTpf44TWgIwpGDPbQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 743dc8176ff1a4f0-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"request":{"type":"City","query":"Pau Brasil, Brazil","language":"en","unit":"m"},"location":{"name":"Pau
+        Brasil","country":"Brazil","region":"Bahia","lat":"-15.450","lon":"-39.650","timezone_id":"America\/Bahia","localtime":"2022-09-01
+        08:49","localtime_epoch":1662022140,"utc_offset":"-3.0"},"current":{"observation_time":"11:49
+        AM","temperature":16,"weather_code":143,"weather_icons":["https:\/\/assets.weatherstack.com\/images\/wsymbols01_png_64\/wsymbol_0006_mist.png"],"weather_descriptions":["Mist"],"wind_speed":4,"wind_degree":235,"wind_dir":"SW","pressure":1022,"precip":0,"humidity":94,"cloudcover":41,"feelslike":16,"uv_index":4,"visibility":2,"is_day":"yes"}}'
+  recorded_at: Thu, 01 Sep 2022 11:49:16 GMT
+- request:
+    method: get
+    uri: http://api.weatherstack.com/current?access_key=e294cc831cde0fe6c95bfbade7ac980c&query=Bahia,%20Brasil
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 01 Sep 2022 11:49:16 GMT
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Apilayer-Transaction-Id:
+      - f8fdea90-5629-4832-8292-efaa7d109bc2
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Time:
+      - '0.013'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=KFgnlYzvPvi4LUExKdBMTFKYVcz09sfdwJKIuH6DpfdMl5Z2ZR9L7aZdsu8YA9h5SH5iKHTszgkQx6LZYsmKw7r5vZvFXS1cOZQAkLTjHMa%2BM5Ik%2FHlxemNcWep%2FuK7L%2FmM2WLE4MA%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 743dc81969c2a61a-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"request":{"type":"City","query":"Pau Brasil, Brazil","language":"en","unit":"m"},"location":{"name":"Pau
+        Brasil","country":"Brazil","region":"Bahia","lat":"-15.450","lon":"-39.650","timezone_id":"America\/Bahia","localtime":"2022-09-01
+        08:49","localtime_epoch":1662022140,"utc_offset":"-3.0"},"current":{"observation_time":"11:49
+        AM","temperature":16,"weather_code":143,"weather_icons":["https:\/\/assets.weatherstack.com\/images\/wsymbols01_png_64\/wsymbol_0006_mist.png"],"weather_descriptions":["Mist"],"wind_speed":4,"wind_degree":235,"wind_dir":"SW","pressure":1022,"precip":0,"humidity":94,"cloudcover":41,"feelslike":16,"uv_index":4,"visibility":2,"is_day":"yes"}}'
+  recorded_at: Thu, 01 Sep 2022 11:49:16 GMT
+- request:
+    method: get
+    uri: http://api.weatherstack.com/current?access_key=e294cc831cde0fe6c95bfbade7ac980c&query=Minas%20Gerais
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 01 Sep 2022 11:52:03 GMT
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Apilayer-Transaction-Id:
+      - af360529-cf50-4fab-b01b-0ad34608aa76
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Time:
+      - '0.201'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=ybyH6hbFrGA97GOX9BkwhmCR6Pm5filb5J9HCAdfZbzzPaH0YUg8RdnGrNx2NlW76q8V0046dmPl81XSvmuQ1LKqUxK8qNs6Rp6tP0jC4UdbRm7Q4FvtglL0R9xBlkOmweiesbgN2g%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 743dcc2b294a4b40-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"request":{"type":"City","query":"Campos Gerais, Brazil","language":"en","unit":"m"},"location":{"name":"Campos
+        Gerais","country":"Brazil","region":"Minas Gerais","lat":"-21.233","lon":"-45.767","timezone_id":"America\/Sao_Paulo","localtime":"2022-09-01
+        08:52","localtime_epoch":1662022320,"utc_offset":"-3.0"},"current":{"observation_time":"11:52
+        AM","temperature":6,"weather_code":113,"weather_icons":["https:\/\/assets.weatherstack.com\/images\/wsymbols01_png_64\/wsymbol_0001_sunny.png"],"weather_descriptions":["Sunny"],"wind_speed":6,"wind_degree":103,"wind_dir":"ESE","pressure":1024,"precip":0,"humidity":91,"cloudcover":11,"feelslike":5,"uv_index":3,"visibility":10,"is_day":"yes"}}'
+  recorded_at: Thu, 01 Sep 2022 11:52:03 GMT
+- request:
+    method: get
+    uri: http://api.weatherstack.com/current?access_key=e294cc831cde0fe6c95bfbade7ac980c&query=Minas%20Gerais
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 01 Sep 2022 11:52:03 GMT
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Apilayer-Transaction-Id:
+      - 377923b6-1d1d-4b78-84e1-af979c0f80ed
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Time:
+      - '0.017'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=6%2FoDVmtlhV4gBN2XW21VSSPigTX%2F7rODBGya4bywKTR1XheflGXQ3%2BLBQ0jN4FSNPjtJfE8NUsT7b0%2Brh2ICLUoFxFRCy5BGeUlm8B7WC76NfJDKCY0lkAcZ%2FlSm9IpF4J%2Fy72nJ1A%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 743dcc2ea8676b09-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"request":{"type":"City","query":"Campos Gerais, Brazil","language":"en","unit":"m"},"location":{"name":"Campos
+        Gerais","country":"Brazil","region":"Minas Gerais","lat":"-21.233","lon":"-45.767","timezone_id":"America\/Sao_Paulo","localtime":"2022-09-01
+        08:52","localtime_epoch":1662022320,"utc_offset":"-3.0"},"current":{"observation_time":"11:52
+        AM","temperature":6,"weather_code":113,"weather_icons":["https:\/\/assets.weatherstack.com\/images\/wsymbols01_png_64\/wsymbol_0001_sunny.png"],"weather_descriptions":["Sunny"],"wind_speed":6,"wind_degree":103,"wind_dir":"ESE","pressure":1024,"precip":0,"humidity":91,"cloudcover":11,"feelslike":5,"uv_index":3,"visibility":10,"is_day":"yes"}}'
+  recorded_at: Thu, 01 Sep 2022 11:52:03 GMT
+- request:
+    method: get
+    uri: http://api.weatherstack.com/current?access_key=e294cc831cde0fe6c95bfbade7ac980c&query=Minas%20Gerais
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 01 Sep 2022 11:52:04 GMT
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Apilayer-Transaction-Id:
+      - '091ceb50-b207-4b31-bcf3-c85d1339fcfe'
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Time:
+      - '0.012'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=futoT1Ww0dfjnVq2KsJ2ZnkB2JXVqkM6zMd5XRmmMuoyg2GyVv5PXOkoefkwDehvNX%2Bug0sAGY54WpOlMIRTsv6mu3XRtRATIZQ%2FCQx40x1awI33WYw5iW0iBQWd7H0aKYr1TnPZRg%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 743dcc30ffbc4cf7-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"request":{"type":"City","query":"Campos Gerais, Brazil","language":"en","unit":"m"},"location":{"name":"Campos
+        Gerais","country":"Brazil","region":"Minas Gerais","lat":"-21.233","lon":"-45.767","timezone_id":"America\/Sao_Paulo","localtime":"2022-09-01
+        08:52","localtime_epoch":1662022320,"utc_offset":"-3.0"},"current":{"observation_time":"11:52
+        AM","temperature":6,"weather_code":113,"weather_icons":["https:\/\/assets.weatherstack.com\/images\/wsymbols01_png_64\/wsymbol_0001_sunny.png"],"weather_descriptions":["Sunny"],"wind_speed":6,"wind_degree":103,"wind_dir":"ESE","pressure":1024,"precip":0,"humidity":91,"cloudcover":11,"feelslike":5,"uv_index":3,"visibility":10,"is_day":"yes"}}'
+  recorded_at: Thu, 01 Sep 2022 11:52:04 GMT
+- request:
+    method: get
+    uri: http://api.weatherstack.com/current?access_key=e294cc831cde0fe6c95bfbade7ac980c&query=Minas%20Gerais
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 01 Sep 2022 11:52:04 GMT
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Apilayer-Transaction-Id:
+      - 551c1a13-b33b-4b1e-a2da-6309b26b1aaa
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Time:
+      - '0.013'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=cInCDtJB9chXAyUYsiCO%2BbOmDS5pkn4XusvEOm8RNTeRrCPRWnxFltgbcHWTmuBRQOwzZQgQixGzd1vcHUS0%2BrXvgjo1P6NbXwOmSkErBGY7mbDILZ255gaIklMdLfk%2B3x%2FuEzig1Q%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 743dcc331ad6a56d-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"request":{"type":"City","query":"Campos Gerais, Brazil","language":"en","unit":"m"},"location":{"name":"Campos
+        Gerais","country":"Brazil","region":"Minas Gerais","lat":"-21.233","lon":"-45.767","timezone_id":"America\/Sao_Paulo","localtime":"2022-09-01
+        08:52","localtime_epoch":1662022320,"utc_offset":"-3.0"},"current":{"observation_time":"11:52
+        AM","temperature":6,"weather_code":113,"weather_icons":["https:\/\/assets.weatherstack.com\/images\/wsymbols01_png_64\/wsymbol_0001_sunny.png"],"weather_descriptions":["Sunny"],"wind_speed":6,"wind_degree":103,"wind_dir":"ESE","pressure":1024,"precip":0,"humidity":91,"cloudcover":11,"feelslike":5,"uv_index":3,"visibility":10,"is_day":"yes"}}'
+  recorded_at: Thu, 01 Sep 2022 11:52:04 GMT
+- request:
+    method: get
+    uri: http://api.weatherstack.com/current?access_key=e294cc831cde0fe6c95bfbade7ac980c&query=Tocantins
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 01 Sep 2022 11:55:31 GMT
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Apilayer-Transaction-Id:
+      - 1c93273c-832c-4c40-94eb-c266648af4e0
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Time:
+      - '0.213'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=f%2BtmJdxo07WbbxOTAaXsrQgHH4GhlivjcXJMZ2VNA7K70XK5iWKJjKeR%2FdW%2BD0%2FABJtbyu6Jvqpry5fCk0GwFmrJXTFhfjtK0gRQLmI7rsFPZmvHjQuLZ5cu%2FfTJv17wGg0BfEQ9Tw%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 743dd140dc214cf7-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"request":{"type":"City","query":"Tocantins, Brazil","language":"en","unit":"m"},"location":{"name":"Tocantins","country":"Brazil","region":"Minas
+        Gerais","lat":"-21.167","lon":"-43.033","timezone_id":"America\/Sao_Paulo","localtime":"2022-09-01
+        08:55","localtime_epoch":1662022500,"utc_offset":"-3.0"},"current":{"observation_time":"11:55
+        AM","temperature":8,"weather_code":143,"weather_icons":["https:\/\/assets.weatherstack.com\/images\/wsymbols01_png_64\/wsymbol_0006_mist.png"],"weather_descriptions":["Mist"],"wind_speed":4,"wind_degree":272,"wind_dir":"W","pressure":1025,"precip":0,"humidity":96,"cloudcover":58,"feelslike":8,"uv_index":2,"visibility":2,"is_day":"yes"}}'
+  recorded_at: Thu, 01 Sep 2022 11:55:31 GMT
+- request:
+    method: get
+    uri: http://api.weatherstack.com/current?access_key=e294cc831cde0fe6c95bfbade7ac980c&query=Tocantins
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 01 Sep 2022 11:55:32 GMT
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Apilayer-Transaction-Id:
+      - 24df4737-dde7-4839-9363-4ec6a4c5651a
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Time:
+      - '0.015'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=lLuC2q%2FJKDDUUsIZjlFkDhQ%2FJGXkR8h5ItlvT4YvKtiXr4Oa5HoImZ3fPbOQqO0KHsEKOFNnXUvT%2BDIFvSLzyDJAjeawKRzfr9u8XZ7XxXE1IhvOMhVpMDIOnDPbyjJ%2FEH9%2Fr4tVcQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 743dd144d90ba4e3-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"request":{"type":"City","query":"Tocantins, Brazil","language":"en","unit":"m"},"location":{"name":"Tocantins","country":"Brazil","region":"Minas
+        Gerais","lat":"-21.167","lon":"-43.033","timezone_id":"America\/Sao_Paulo","localtime":"2022-09-01
+        08:55","localtime_epoch":1662022500,"utc_offset":"-3.0"},"current":{"observation_time":"11:55
+        AM","temperature":8,"weather_code":143,"weather_icons":["https:\/\/assets.weatherstack.com\/images\/wsymbols01_png_64\/wsymbol_0006_mist.png"],"weather_descriptions":["Mist"],"wind_speed":4,"wind_degree":272,"wind_dir":"W","pressure":1025,"precip":0,"humidity":96,"cloudcover":58,"feelslike":8,"uv_index":2,"visibility":2,"is_day":"yes"}}'
+  recorded_at: Thu, 01 Sep 2022 11:55:32 GMT
+- request:
+    method: get
+    uri: http://api.weatherstack.com/current?access_key=e294cc831cde0fe6c95bfbade7ac980c&query=Tocantins
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 01 Sep 2022 11:55:32 GMT
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Apilayer-Transaction-Id:
+      - bf13b461-0599-41d0-adeb-116cbd0c2a58
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Time:
+      - '0.012'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=T7innCM9krRpQM8TN8ruc7C7WqRkcaqe6OFWRN1w9SUWrO24iXkt%2FQQHCLQzo8b9nP8wdl8%2FNdR88PBtZGG2UXqPHZsq4Cjud9X%2Fi3yJHXklVud%2FyE1pkd1vUy7F4L4sfMjx3XDrmQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 743dd1470b69a63e-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"request":{"type":"City","query":"Tocantins, Brazil","language":"en","unit":"m"},"location":{"name":"Tocantins","country":"Brazil","region":"Minas
+        Gerais","lat":"-21.167","lon":"-43.033","timezone_id":"America\/Sao_Paulo","localtime":"2022-09-01
+        08:55","localtime_epoch":1662022500,"utc_offset":"-3.0"},"current":{"observation_time":"11:55
+        AM","temperature":8,"weather_code":143,"weather_icons":["https:\/\/assets.weatherstack.com\/images\/wsymbols01_png_64\/wsymbol_0006_mist.png"],"weather_descriptions":["Mist"],"wind_speed":4,"wind_degree":272,"wind_dir":"W","pressure":1025,"precip":0,"humidity":96,"cloudcover":58,"feelslike":8,"uv_index":2,"visibility":2,"is_day":"yes"}}'
+  recorded_at: Thu, 01 Sep 2022 11:55:32 GMT
+- request:
+    method: get
+    uri: http://api.weatherstack.com/current?access_key=e294cc831cde0fe6c95bfbade7ac980c&query=Tocantins
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 01 Sep 2022 11:55:33 GMT
+      Content-Type:
+      - application/json; Charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Apilayer-Transaction-Id:
+      - 21d33b99-1d4f-4f8e-8e09-1cb3ad35d42c
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Request-Time:
+      - '0.017'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Zlu0ISgV2HFwxdRixKH%2F8rUK33wo52s%2F0CzgMtRP6Omux967PdGArH8Net8OjsHGN3hjsSBHsiLtn31l4FUwq74Lskpyv62bDy%2FSNlkGuSeA39GD67i8ib5xvW%2B5EnuHAKVSdXiNMA%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 743dd149cd25a514-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"request":{"type":"City","query":"Tocantins, Brazil","language":"en","unit":"m"},"location":{"name":"Tocantins","country":"Brazil","region":"Minas
+        Gerais","lat":"-21.167","lon":"-43.033","timezone_id":"America\/Sao_Paulo","localtime":"2022-09-01
+        08:55","localtime_epoch":1662022500,"utc_offset":"-3.0"},"current":{"observation_time":"11:55
+        AM","temperature":8,"weather_code":143,"weather_icons":["https:\/\/assets.weatherstack.com\/images\/wsymbols01_png_64\/wsymbol_0006_mist.png"],"weather_descriptions":["Mist"],"wind_speed":4,"wind_degree":272,"wind_dir":"W","pressure":1025,"precip":0,"humidity":96,"cloudcover":58,"feelslike":8,"uv_index":2,"visibility":2,"is_day":"yes"}}'
+  recorded_at: Thu, 01 Sep 2022 11:55:33 GMT
 recorded_with: VCR 6.1.0
