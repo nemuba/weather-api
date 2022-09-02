@@ -2,8 +2,8 @@
 
 # WeatherService
 class WeatherService
-  ROOT_PATH = 'http://api.weatherstack.com'
-  ACCESS_TOKEN = 'e294cc831cde0fe6c95bfbade7ac980c'
+  ROOT_PATH = ENV['WEATHER_API_URL']
+  ACCESS_TOKEN = ENV['WEATHER_API_TOKEN']
   CURRENT_PATH = "#{ROOT_PATH}/current?access_key=#{ACCESS_TOKEN}".freeze
 
   def self.current(query = nil)
