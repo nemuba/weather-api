@@ -53,6 +53,7 @@ group :development, :test do
   gem 'rspec-sidekiq'
   gem 'vcr'
   gem 'webmock'
+  gem 'dotenv-rails'
 end
 
 group :development do
