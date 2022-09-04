@@ -4,6 +4,7 @@
 class Creator
   def self.call(params)
     return { error: 'error', message: 'missing_params: [:token, :location]' } unless validate_params(params)
+    return { error: 'error', message: 'token must be unique' } unless token_unique?(params[:token])
 
     model = create_model(params)
 
@@ -37,12 +38,10 @@ class Creator
     end
 
     def validate_params(params)
-      token_unique?(params[:token]) && params[:location].present?
+      params[:token] && params[:location].present?
     end
 
     def token_unique?(token)
-      return false if token.nil? || token.blank?
-
       unique = Weather.where(token: token).exists?
 
       unique == false
