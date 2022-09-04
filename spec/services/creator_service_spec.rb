@@ -7,36 +7,29 @@ RSpec.describe Creator, type: :job do
 
   describe '#call' do
     it 'success' do
-      Creator.call(attrs)
-      expect(GetJob.jobs.size).to eq(1)
+      described_class.call(attrs)
       expect(GetJob).to have_enqueued_sidekiq_job(attrs[:token])
-      expect(GetJob).to be_processed_in(:weather_request)
     end
 
     it 'error' do
-      data = Creator.call({})
-      expect(GetJob.jobs.size).to eq(0)
-      expect(data).to have_key(:error)
-      expect(data).to have_key(:message)
+      data = described_class.call({})
+      expect(data.keys).to include(:error)
     end
   end
 
   describe '#show' do
     before do
-      Creator.call(attrs)
+      described_class.call(attrs)
     end
 
     it 'success' do
-      data = Creator.show(attrs[:token])
-      expect(data).to have_key('token')
-      expect(data).to have_key('location')
-      expect(data).to have_key('data')
+      data = described_class.show(attrs[:token])
+      expect(data.keys).to include('data')
     end
 
     it 'error' do
-      data = Creator.show(nil)
-      expect(data).to have_key(:error)
-      expect(data).to have_key(:message)
+      data = described_class.show(nil)
+      expect(data.keys).to include(:error)
     end
   end
 end

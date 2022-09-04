@@ -22,6 +22,6 @@ RSpec.describe Weather, type: :model do
   end
 
   it '#create' do
-    expect { create(:weather) }.to change(Weather, :count).by(1)
+    expect { create(:weather) }.to change(described_class, :count).by(1)
   end
 end

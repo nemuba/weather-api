@@ -42,6 +42,7 @@ gem 'erb_lint', require: false
 gem 'faker'
 gem 'httparty'
 gem 'rubocop-rails', require: false
+gem 'rubocop-rspec', require: false
 gem 'sidekiq'
 
 group :development, :test do
@@ -49,7 +50,6 @@ group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
   gem 'dotenv-rails'
   gem 'factory_bot_rails'
-  gem 'faker'
   gem 'rspec-rails'
   gem 'vcr'
   gem 'webmock'

@@ -8,16 +8,10 @@ RSpec.describe WeatherService do
 
     it 'success' do
       expect(described_class.current(location)).not_to be_empty
-      expect(described_class.current(location)).to be_kind_of(Hash)
-      expect(described_class.current(location)).to have_key('location')
-      expect(described_class.current(location)).to have_key('current')
     end
 
     it 'error' do
-      expect(described_class.current(nil)).not_to be_empty
-      expect(described_class.current(nil)).to be_kind_of(Hash)
-      expect(described_class.current(nil)).to have_key(:code)
-      expect(described_class.current(nil)).to have_key(:message)
+      expect(described_class.current(nil).keys).to eql(%i[code message])
     end
   end
 end
