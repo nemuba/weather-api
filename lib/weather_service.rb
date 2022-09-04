@@ -7,7 +7,7 @@ class WeatherService
   CURRENT_PATH = "#{ROOT_PATH}/current?access_key=#{ACCESS_TOKEN}".freeze
 
   def self.current(query = nil)
-    return code(601) if query.blank?
+    return code(601) if query.nil? || query.blank?
 
     request = HTTParty.get("#{CURRENT_PATH}&query=#{query}").parsed_response
 
