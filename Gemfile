@@ -49,11 +49,14 @@ group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot_rails'
   gem 'faker'
-  gem 'rspec-rails'
-  gem 'rspec-sidekiq'
+  gem 'rspec-rails'  
   gem 'vcr'
   gem 'webmock'
   gem 'dotenv-rails'
+end
+
+group :test do
+  gem 'rspec-sidekiq'
 end
 
 group :development do
