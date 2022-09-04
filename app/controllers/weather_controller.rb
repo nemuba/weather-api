@@ -4,7 +4,7 @@
 class WeatherController < ApplicationController
   def create
     data = Creator.call(weather_params.to_unsafe_h)
-    
+
     if data.present? && data.is_a?(Hash) && data.key?(:error)
       render_json(data, status: :accepted)
     else
