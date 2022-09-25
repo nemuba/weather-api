@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   mount Sidekiq::Web => '/sidekiq'
+
+  get '/weathers', to: 'weather#index'
+  delete '/weathers/:id', to: 'weather#destroy'
   post '/weather/current', to: 'weather#create'
   get '/weather/current/result', to: 'weather#show'
 end

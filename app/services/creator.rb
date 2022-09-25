@@ -4,11 +4,12 @@
 class Creator
   def self.call(params)
     return { error: 'error', message: 'missing_params: [:token, :location]' } unless validate_params(params)
-    return { error: 'error', message: 'token must be unique' } unless token_unique?(params[:token])
 
-    model = create_model(params)
+    model = find_or_create_model(params)
 
     GetJob.perform_async(model.token)
+
+    model.token
   end
 
   def self.get_and_save(token)
@@ -29,8 +30,14 @@ class Creator
   end
 
   class << self
-    def create_model(params)
-      Weather.create!(params)
+    def find_or_create_model(params)
+      model = Weather.find_by(location: params[:location])
+
+      if model.present? && (Time.zone.today.mjd - model.created_at.to_date.mjd) <= 1
+        model
+      else
+        Weather.create!(params)
+      end
     end
 
     def get_model(token)
@@ -39,12 +46,6 @@ class Creator
 
     def validate_params(params)
       params[:token] && params[:location].present?
-    end
-
-    def token_unique?(token)
-      unique = Weather.where(token: token).exists?
-
-      unique == false
     end
   end
 end
