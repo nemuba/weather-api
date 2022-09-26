@@ -27,6 +27,8 @@ jobs:
       DATABASE_DEV_URL: "postgres://rails:password@localhost:5432/rails_test"
       DATABASE_TEST_URL: "postgres://rails:password@localhost:5432/rails_test"
       DATABASE_URL: "postgres://rails:password@localhost:5432/rails_test"
+      WEATHER_API_TOKEN: 'e294cc831cde0fe6c95bfbade7ac980c'
+      WEATHER_API_URL: 'http://api.weatherstack.com'
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
