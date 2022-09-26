@@ -1,7 +1,7 @@
 name: Fly Deploy
 on: [push]
 env:
-  FLY_API_TOKEN: ${{ secrets.FlyApiToken }}
+  FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
   DOCKER_BUILDKIT: true
 jobs:
   deploy:
@@ -10,5 +10,6 @@ jobs:
       steps:
         - uses: actions/checkout@v2
         - uses: superfly/flyctl-actions/setup-flyctl@master
+        - run: "echo $FLY_API_TOKEN"
         - run: "flyctl deploy"
 
