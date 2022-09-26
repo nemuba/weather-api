@@ -2,6 +2,7 @@ name: Fly Deploy
 on: [push]
 env:
   FLY_API_TOKEN: 4Xp2SLYc8p_xQgKVQb0d59MSg5cocqe9OIIssuomBkc
+  DOCKER_BUILDKIT: 1 docker build .
 jobs:
   deploy:
       name: Deploy app
